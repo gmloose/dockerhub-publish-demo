@@ -3,12 +3,12 @@ name: ci
 on:
   push:
     branches:
-      - $repo.default_branch
+      - 'main'
     tags:
       - 'v*'
   pull_request:
     branches:
-      - $repo.default_branch
+      - 'main'
 
 jobs:
   build:
